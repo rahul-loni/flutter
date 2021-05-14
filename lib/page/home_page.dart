@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
     body: Center(
         child: Column(
           children: <Widget>[
-            Image.asset("assets/images/home_image.png",height: 300,width: 300,),
+            Image.asset("assets/images/hey_image.png",height: 300,width: 300,),
             Text("Welcome To My App",style: TextStyle(
               fontSize: 28.0,
               fontWeight: FontWeight.bold,

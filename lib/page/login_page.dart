@@ -23,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
   changeButton=true;
   });
   await Future.delayed(Duration(seconds: 1));
-  await Navigator.pushNamed(context, MyRoutes.HomeRoute);
+  await Navigator.pushNamed(context, MyRoutes.DashboardRoute);
   setState(() {
   changeButton=false;
   });
@@ -39,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             children: <Widget>[
 
-               Image.asset("assets/images/login_image.png",
+               Image.asset("assets/images/login_images.png",
                  fit: BoxFit.cover,
                  height: 300,
                ),

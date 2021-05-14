@@ -21,7 +21,7 @@ class _SignupPageState extends State<SignupPage> {
         changeButton=true;
       });
       await Future.delayed(Duration(seconds: 1));
-      await Navigator.pushNamed(context, MyRoutes.HomeRoute);
+      await Navigator.pushNamed(context, MyRoutes.DashboardRoute);
       setState(() {
         changeButton=false;
       });
@@ -37,7 +37,7 @@ class _SignupPageState extends State<SignupPage> {
           child: Column(
             children: <Widget>[
 
-              Image.asset("assets/images/login_image.png",
+              Image.asset("assets/images/signup_image.png",
                 fit: BoxFit.cover,
                 height: 300,
               ),
@@ -83,6 +83,24 @@ class _SignupPageState extends State<SignupPage> {
                       decoration: InputDecoration(
                         hintText: "Enter Password",
                         labelText: "Password",
+
+                      ),
+                      validator: (value){
+                        if (value.isEmpty) {
+                          return "Password Can Not We Empty";
+                        }
+                        else if (value.length<6) {
+                          return "Password Password length should be atlest 6";
+                        }
+
+                        return null;
+                      },
+                    ),
+                    TextFormField(
+                      obscureText: true,
+                      decoration: InputDecoration(
+                        hintText: "Enter ConfirmPassword",
+                        labelText: "ConfirmPassword",
 
                       ),
                       validator: (value){

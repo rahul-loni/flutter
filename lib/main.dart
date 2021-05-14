@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_colab/page/dashboard_page.dart';
 import 'package:flutter_colab/page/home_page.dart';
 import 'package:flutter_colab/page/login_page.dart';
 import 'package:flutter_colab/page/signup_page.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         "/":(context)=>new HomePage(),
         MyRoutes.SignupRoute:(context)=>SignupPage(),
         MyRoutes.LoginRoute:(context)=>LoginPage(),
-        //MyRoutes.SignupRoute:(context)=>SignupPage(),
+        MyRoutes.DashboardRoute:(context)=>DashboardPage(),
  },
     );
   }
