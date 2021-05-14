@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_colab/page/home_page.dart';
 import 'package:flutter_colab/page/login_page.dart';
+import 'package:flutter_colab/page/signup_page.dart';
 import 'package:flutter_colab/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -27,9 +28,10 @@ class MyApp extends StatelessWidget {
       ),
       //initialRoute:"/home" ,
       routes: {
-        "/":(context)=>new LoginPage(),
-        MyRoutes.HomeRoute:(context)=>HomePage(),
+        "/":(context)=>new HomePage(),
+        MyRoutes.SignupRoute:(context)=>SignupPage(),
         MyRoutes.LoginRoute:(context)=>LoginPage(),
+        //MyRoutes.SignupRoute:(context)=>SignupPage(),
  },
     );
   }
