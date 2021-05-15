@@ -4,6 +4,7 @@ import 'package:flutter_colab/page/home_page.dart';
 import 'package:flutter_colab/page/login_page.dart';
 import 'package:flutter_colab/page/signup_page.dart';
 import 'package:flutter_colab/utils/routes.dart';
+import 'package:flutter_colab/widgets/themes.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
@@ -21,9 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple
-            ),
+      theme: MyThemes.lightTheme(context),
       darkTheme: ThemeData(
         brightness: Brightness.dark
       ),
